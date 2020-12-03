@@ -1,0 +1,61 @@
+{
+  "restaurantInfo": {
+    "name": "kfbkjsbjkzbj",
+    "email": "b@gmail.com",
+    "phones": ["9999999999"],
+    "filter": ["GLuten free", "lactose Free"],
+    "QRCode": "kdfjwghjwhjvsh",
+    "mainCategories": [12, 99, 78, 65] // array of id(number) of main categories
+  },
+  "categories":[
+    {
+    "categoryId":12,
+    "categoryName" :"Tawa",
+    "categoryIcon": "Tawa.png",
+    "childs"  : [13,15], // array of id (Number) of subcategories 
+    "hasSubCategories" :"true"
+    },
+    {
+        "categoryId":87,
+        "categoryName" :"Tandoor",
+        "categoryIcon": "Tandoor.png.png",
+        "childs"  : [], // array of id (Number) of subcategories 
+        "hasSubCategories" :true
+    } 
+  ],
+  "foodItems":[
+      {
+          "id":12,
+          "p_id":12,
+          "categoryId":87,
+           "details":{
+              "rate":"9880|9873883|9897897897"
+           },
+           "members":[10,92], // id of food items which are sub foods
+           "hasChild":true
+          
+      },
+      {
+        "id":10,
+        "p_id":12,
+        "categoryId":87,
+         "details":{
+
+         },
+         "members":[], // id of food items which are sub foods
+         "hasChild":false,
+
+      },
+      {
+        "id":49,
+        "p_id":-1,
+        "categoryId":87,
+         "details":{
+
+         },
+         "members":[] // id of food items which are sub foods
+
+      }
+  ]
+}
+
